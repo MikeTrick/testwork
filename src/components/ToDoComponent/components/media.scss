@@ -1,0 +1,35 @@
+/* monitors and laptops */
+@media (min-width: 1240px)  {}
+
+/* mobile */
+@media (max-width: 768px) {
+  $default-spacing: 2px;
+  .card {
+    padding: $default-spacing;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DCF9F98C;
+    margin: 7px 0;
+
+
+  }
+}
+
+
+/* iPhone 5 in portrait & landscape */
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .card {
+    padding: $default-spacing;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DCF9F98C;
+    margin: 7px 0;
+
+
+  }
+}
+

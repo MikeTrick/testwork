@@ -1,0 +1,161 @@
+.todo-list {
+  max-width: 600px;
+  max-height: 80%;
+  padding: $default-spacing;
+  background-color: #C2CDCB;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    input {
+      background-color: #F2F2F2;
+      border: none;
+      border-radius: 3px;
+    }
+
+  }
+
+  &__filter {
+    border-radius: 3px;
+    margin: 5px;
+
+    &_active {
+      color: white;
+      background-color: #DCF9F98C;
+    }
+  }
+
+  &__filter:hover {
+    cursor: pointer;
+  }
+
+  * {
+    padding: $default-spacing;
+    font-family: Montserrat;
+
+  }
+
+
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(81, 79, 79, 0.15);
+    border-radius: 3px;
+    justify-content: flex-start;
+    max-height: 100%;
+    border: 1px solid;
+    border-color: #7D7E7F;
+    overflow-y: scroll;
+  }
+
+  &__cards-container {
+    overflow-y: auto;
+  }
+
+
+  &__content {
+    font-style: normal;
+    flex-wrap: wrap;
+    flex: 2 2 80%;
+
+
+    &_crossed {
+      text-decoration: line-through;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  &__footer {
+
+    button {
+      background-image: url('addBtnGreen.png');
+      width: 60px;
+      height: 26px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+    }
+
+    input {
+      background-color: #F2F2F2;
+      border: none;
+      width: 80%;
+      height: 110%;
+      border-radius: 3px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1px;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 75%;
+
+    &__filters {
+      font-size: 80%;
+      input {
+        background-color: #F2F2F2;
+        border: none;
+        border-radius: 1px;
+        font-size: 85%;
+      }
+    }
+
+    &__filter {
+      border-radius: 2px;
+      margin: 2px;
+
+      &_active {
+        color: white;
+        background-color: #DCF9F98C;
+      }
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(81, 79, 79, 0.15);
+      border-radius: 1px;
+      justify-content: flex-start;
+      max-height: 100%;
+      border: 1px solid;
+      border-color: #7D7E7F;
+      overflow-y: scroll;
+      max-width:250px;
+    }
+    &__footer {
+
+      button {
+        background-image: url('addBtnGreen.png');
+        background-size: 90%;
+        width: 45px;
+        height: 19.5px;
+        background-repeat: no-repeat;
+
+      }
+
+      input {
+        background-color: #F2F2F2;
+        border: none;
+        width: 70%;
+        height: 95%;
+        border-radius: 2px;
+        font-size: 80%;
+      }
+    }
+  }
+}

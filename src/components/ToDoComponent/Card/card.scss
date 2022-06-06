@@ -1,0 +1,54 @@
+
+.card {
+  padding: $default-spacing;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DCF9F98C;
+  margin: 15px 0;
+  @media (max-width: 768px) {
+    $default-spacing: 2px;
+    padding: $default-spacing;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DCF9F98C;
+    margin: 2px 0;
+    font-size: 80%;
+
+  }
+}
+
+
+.card__button {
+  background-color: transparent;
+  background-image: url('mark-group.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 25px;
+  height: 25px;
+  flex: 1 1 10%;
+  @media (max-width: 768px) {
+    background-color: transparent;
+    background-image: url('mark-group.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 13px;
+    height: 13px;
+    background-size: 80%;
+    flex: 1 1 0%;
+  }
+}
+
+
+.taskElement {
+  background-color: rgba(125, 126, 127, 1);
+  align-items: center;
+  color: $text-color;
+
+}
+

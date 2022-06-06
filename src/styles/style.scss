@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.list-wrapper {
+  position: relative;
+
+
+  &__layout {
+    position: relative;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+
+  }
+}
